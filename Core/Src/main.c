@@ -123,9 +123,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  huart2.Instance->CR3 |= USART_CR3_DMAT;
-	  HAL_DMA_START_IT(&hdma_usart2_tx, (uint32_t)msg,
-			  (uint32_t)&huart2.Instance->TDR, strlen(msg));
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
